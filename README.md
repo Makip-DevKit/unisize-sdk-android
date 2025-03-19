@@ -34,25 +34,6 @@ Android Studio Kotlin／Java で開発された Android 用アプリケーショ
 - CI バナーのみを使用している一部クライアント様向けの対応を行いました。v1.5.5 より CI バナーのみの利用が可能になりました。
 - 2025年2月にリリースした3D表示機能に対応しました。対象商品でアンケート結果画面でシルエットの3D表示が可能になりました。
 - 内部処理の最適化
-  
-## v1.5.2 （Android 版のみ）
-
-- unisizeSDK で利用している Webview の SSL エラーハンドラの処理が、Google Play Console 上で警告が表示されることがあったため、この部分改良しました。
-- UnisizeBanner class の UnisizeBannerListener > fun didBeidChanged() の引数 `recommended_items` の名称を `recommendedItems` に変更しました。
-- 内部処理の改善など
-
-## v1.5.1 （Android 版のみ）
-
-- unisizeSDK を導入するアプリ側の設計、実装によって、 unisizeSDK v1.5 Android 版で unisize バナーをタップした際にアンケート画面が表示されないことがある問題を解決しました。<br>
-  商品詳細画面で context から取得できる Activity が FragmentActivity、または FragmentActivity を継承した Class（AppCompatActivity など）ではない場合に、SDK 内で動的に FragmentActivity を生成して、アンケート画面を表示するように改良を加えています。<br>
-  上記に伴い、AndroidManifest.xml へ下記の設定の追加が必要となります。
-
-  ```xml
-
-  <activity android:name="jp.co.makip.unisizesdk.UnisizeBanner$WebAppInterface$UnisizeDynamicFragmentActivity"
-  android:exported="true" />
-
-  ```
 
 ## ドキュメント
 
