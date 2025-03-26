@@ -39,11 +39,6 @@ Android Studio Kotlin／Java で開発された Android 用アプリケーショ
 - CI バナーのみを使用している一部クライアント様向けの対応を行いました。v1.5.5 より CI バナーのみの利用が可能になりました。
 - 2025年2月にリリースした3D表示機能に対応しました。対象商品でアンケート結果画面でシルエットの3D表示が可能になりました。
 - 内部処理の最適化
-
-## ドキュメント
-
-最新のドキュメント、SDK リファレンスは GitHub の Wiki をご覧ください。  
-[https://github.com/Makip-DevKit/unisize-sdk-doc/](https://github.com/Makip-DevKit/unisize-sdk-doc/)
   
 ## その他
 - unisizeSDK導入に関しての詳細は、弊社担当営業までご相談ください。
