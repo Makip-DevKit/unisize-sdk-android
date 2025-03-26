@@ -10,6 +10,11 @@ unisize は、オンラインでのショッピング体験を向上させるた
 ユーザーは簡単な質問に答えることで個別に最適なサイズ推薦を受けられ、返品率の削減にも貢献します。  
 国内外の多くの EC サイトで利用されており、ユーザーフレンドリーなインターフェース、精度の高いサイズレコメンドを提供しています。  
 
+## ドキュメント
+
+最新のドキュメント、SDK リファレンス、サンプルプロジェクト は GitHub の Wiki をご覧ください。  
+[https://github.com/Makip-DevKit/unisize-sdk-doc/](https://github.com/Makip-DevKit/unisize-sdk-doc/)
+  
 ## unisizeSDK の対応 OS、バージョン
 
 ・Android 11（API レベル 30）、またはそれ以降
@@ -39,8 +44,7 @@ Android Studio Kotlin／Java で開発された Android 用アプリケーショ
 
 最新のドキュメント、SDK リファレンスは GitHub の Wiki をご覧ください。  
 [https://github.com/Makip-DevKit/unisize-sdk-doc/](https://github.com/Makip-DevKit/unisize-sdk-doc/)
-
-
+  
 ## その他
 - unisizeSDK導入に関しての詳細は、弊社担当営業までご相談ください。
 - unisizeSDK v1.5.5よりも前のバージョンが必要な場合は、弊社担当営業までご相談ください。
