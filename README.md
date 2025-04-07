@@ -43,7 +43,11 @@ Android Studio Kotlin／Java で開発された Android 用アプリケーショ
 ## その他
 - unisizeSDK導入に関しての詳細は、弊社担当営業までご相談ください。
 - unisizeSDK v1.5.5よりも前のバージョンが必要な場合は、弊社担当営業までご相談ください。
-
+  
+## お問い合わせ
+unisizeSDK についてのお問い合わせは、下記のお問い合わせフォームよりお気軽にご連絡ください。  
+https://makip.co.jp/contact
+  
 ## ライセンス
 - 付属の「unisize_SDK 使用許諾契約.pdf」をご覧ください。
 
