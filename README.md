@@ -34,11 +34,13 @@ Android Studio Kotlin／Java で開発された Android 用アプリケーショ
 
 ## バージョン履歴
 
-### v1.5.5
-
-- CI バナーのみを使用している一部クライアント様向けの対応を行いました。v1.5.5 より CI バナーのみの利用が可能になりました。
-- 2025年2月にリリースした3D表示機能に対応しました。対象商品でアンケート結果画面でシルエットの3D表示が可能になりました。
-- 内部処理の最適化
+### v2.0
+- 【iOS】SwiftUI をサポートしました。
+- 【iOS】バナーの表示で使用する Class に、新たに UnisizeBannerWebview Class を追加しました。これによりバナー単位（TEXTバナー、EXバナー、CIバナー）で Class の配置が可能となりました。（複数インスタンスの利用可能。Android版に近い方法での実装が可能となりました。）<br>
+  Flutter や SwiftUI での実装が UnisizeBanner Class と比べ容易になります。<br>なお、下位互換を持たせているため、すでに unisizeSDK を導入済みで Swift で開発されたアプリの場合は、これまでの UnisizeBanner Class を使った実装方法でも、特に実装を変更することなくそのまま動作しますが、UnisizeBanner Class は将来（数年以内）に廃止する予定のため、どこかのタイミングで UnisizeBannerWebview Class へ切り替えていただくことをお勧めいたします。
+- 【iOS】UnisizeCVTag に`close()`を追加しました。詳しくはSDKリファレンスをご覧ください。
+- 【Android】Android版は軽度の最適化のみです。前バージョンからの大きな変更はございません。
+- 【Other】unisizeSDK の配布形態を GitHub を使った配信方式に変更します。iOS は Swift Package Manager、Android は Maven リポジトリによるパッケージ配布となります。
   
 ## その他
 - unisizeSDK導入に関しての詳細は、弊社担当営業までご相談ください。
