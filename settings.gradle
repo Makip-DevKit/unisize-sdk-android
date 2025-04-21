@@ -1,0 +1,2 @@
+rootProject.name = "unisize-sdk-android"
+include ':unisizeSDK'

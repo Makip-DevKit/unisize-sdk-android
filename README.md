@@ -12,7 +12,7 @@ unisize は、オンラインでのショッピング体験を向上させるた
 
 ## ドキュメント
 
-最新のドキュメント、SDK リファレンス、サンプルプロジェクト は GitHub の Wiki をご覧ください。  
+導入手順や最新のドキュメント、SDK リファレンス、サンプルプロジェクト は GitHub の Wiki をご覧ください。  
 [https://github.com/Makip-DevKit/unisize-sdk-doc/](https://github.com/Makip-DevKit/unisize-sdk-doc/)
   
 ## unisizeSDK の対応 OS、バージョン
@@ -43,7 +43,7 @@ Android Studio Kotlin／Java で開発された Android 用アプリケーショ
 - 【Other】unisizeSDK の配布形態を GitHub を使った配信方式に変更します。iOS は Swift Package Manager、Android は Maven リポジトリによるパッケージ配布となります。
   
 ## その他
-- unisizeSDK導入に関しての詳細は、弊社担当営業までご相談ください。
+- unisizeSDK 導入に関しての詳細は、弊社担当営業までご相談ください。
 - unisizeSDK v1.5.5よりも前のバージョンが必要な場合は、弊社担当営業までご相談ください。
   
 ## お問い合わせ
