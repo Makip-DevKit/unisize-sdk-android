@@ -1,19 +1,28 @@
-buildscript {
-    repositories {
-        google()
-        mavenCentral()
-    }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:8.7.2'
+plugins {
+    id 'maven-publish'
+}
+
+group = 'com.github.Makip-DevKit'
+version = '2.0'
+
+def aarFile = file("libs/unisizeSDK-release.aar")
+
+publishing {
+    publications {
+        release(MavenPublication) {
+            groupId = 'com.github.Makip-DevKit'
+            artifactId = 'unisize-sdk'
+            version = '2.0'
+
+            artifact(aarFile) {
+                extension 'aar'
+            }
+        }
     }
 }
 
-allprojects {
-    repositories {
-        google()
-        mavenCentral()
-        flatDir {
-            dirs 'libs'
-        }
-    }
+// JitPackが実行するassembleタスクを登録（AARをコピーするだけ）
+tasks.register("assemble", Copy) {
+    from aarFile
+    into "$buildDir/outputs/aar"
 }
