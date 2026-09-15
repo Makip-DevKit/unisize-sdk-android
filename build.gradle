@@ -3,7 +3,7 @@ plugins {
 }
 
 group = 'com.github.Makip-DevKit'
-version = '3.0.0'
+version = '3.0.1'
 
 def aarFile = file("libs/unisizeSDK-release.aar")
 
@@ -12,7 +12,7 @@ publishing {
         release(MavenPublication) {
             groupId = 'com.github.Makip-DevKit'
             artifactId = 'unisize-sdk'
-            version = '3.0.0'
+            version = '3.0.1'
 
             artifact(aarFile) {
                 extension 'aar'

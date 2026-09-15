@@ -33,6 +33,9 @@ Android Studio Kotlin／Java で開発された Android 用アプリケーショ
   実装方法など、詳しくは付属のドキュメント「unisize のコンバージョンの実装について」をご覧ください。
 
 ## バージョン履歴
+## v3.0.1
+- 【All】aunn コーディネートで、体型情報の取得がサーバー側で認証エラー（401）となった場合に、コーディネート一覧の取得ごと中断してしまう問題を修正しました。認証エラーとなった場合もコーディネート一覧は表示され、次回の取得時に beid の登録状態を再確認するようになります。
+
 ### v3.0.0
 - 【Android】aunn コーディネートに対応しました。
 
@@ -41,14 +44,6 @@ Android Studio Kotlin／Java で開発された Android 用アプリケーショ
 - 【Android】アンケート画面のよく着るブランド入力欄で日本語入力ができない問題を修正しました。
 - 【iOS】iOS版でアンケート画面をスワイプで閉じられるように変更しました。
 - 【All】内部処理の最適化
-
-### v2.0
-- 【iOS】SwiftUI をサポートしました。
-- 【iOS】バナーの表示で使用する Class に、新たに UnisizeBannerWebview Class を追加しました。これによりバナー単位（TEXTバナー、EXバナー、CIバナー）で Class の配置が可能となりました。（複数インスタンスの利用可能。Android版に近い方法での実装が可能となりました。）<br>
-  Flutter や SwiftUI での実装が UnisizeBanner Class と比べ容易になります。<br>なお、下位互換を持たせているため、すでに unisizeSDK を導入済みで Swift で開発されたアプリの場合は、これまでの UnisizeBanner Class を使った実装方法でも、特に実装を変更することなくそのまま動作しますが、UnisizeBanner Class は将来（数年以内）に廃止する予定のため、どこかのタイミングで UnisizeBannerWebview Class へ切り替えていただくことをお勧めいたします。
-- 【iOS】UnisizeCVTag に`close()`を追加しました。詳しくはSDKリファレンスをご覧ください。
-- 【Android】Android版は軽度の最適化のみです。前バージョンからの大きな変更はございません。
-- 【Other】unisizeSDK の配布形態を GitHub を使った配信方式に変更します。iOS は Swift Package Manager、Android は Maven リポジトリによるパッケージ配布となります。
 
 ## その他
 - unisizeSDK 導入に関しての詳細は、弊社担当営業までご相談ください。
